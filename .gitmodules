@@ -10,3 +10,6 @@
 [submodule "nvim/.local/share/nvim/site/pack/kurapika/start/nvim-jdtls"]
 	path = nvim/.local/share/nvim/site/pack/kurapika/start/nvim-jdtls
 	url = https://github.com/mfussenegger/nvim-jdtls
+[submodule "nvim/.local/share/nvim/site/pack/kurapika/start/nvim-treesitter"]
+	path = nvim/.local/share/nvim/site/pack/kurapika/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter
