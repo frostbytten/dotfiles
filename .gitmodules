@@ -1,15 +1,3 @@
-[submodule "nvim/.local/share/nvim/pack/kurapika/start/plenary.nvim"]
-	path = nvim/.local/share/nvim/pack/kurapika/start/plenary.nvim
-	url = https://github.com/nvim-lua/plenary.nvim
-[submodule "nvim/.local/share/nvim/pack/kurapika/start/neorg"]
-	path = nvim/.local/share/nvim/pack/kurapika/start/neorg
-	url = https://github.com/nvim-neorg/neorg
-[submodule "nvim/.local/share/nvim/site/pack/kurapika/start/nvim-lspconfig"]
-	path = nvim/.local/share/nvim/site/pack/kurapika/start/nvim-lspconfig
-	url = https://github.com/neovim/nvim-lspconfig
-[submodule "nvim/.local/share/nvim/site/pack/kurapika/start/nvim-jdtls"]
-	path = nvim/.local/share/nvim/site/pack/kurapika/start/nvim-jdtls
-	url = https://github.com/mfussenegger/nvim-jdtls
 [submodule "nvim/.local/share/nvim/site/pack/kurapika/start/nvim-treesitter"]
 	path = nvim/.local/share/nvim/site/pack/kurapika/start/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter

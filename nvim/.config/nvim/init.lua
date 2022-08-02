@@ -12,17 +12,3 @@ require('nvim-treesitter.configs').setup {
     additional_vim_regex_highlighting = false,
   },
 }
-
-
-require('neorg').setup {
-  load = {
-    ["core.defaults"] = {},
-    ["core.norg.dirman"] = {
-      config = {
-        workspaces = {
-          work = "~/Documents/neorg/work",
-        },
-      },
-    },
-  },
-}
