@@ -1,4 +1,4 @@
-;;; init.el -- Welcome to the jungle
+;; init.el -- Welcome to the jungle
 ;;; Commentary:
 ;;; Code:
 
@@ -24,6 +24,8 @@
 (scroll-bar-mode -1)
 (setq inhibit-startup-screen t)
 (fido-vertical-mode 1)
+(add-to-list 'default-frame-alist
+	     '(font . "JetBrainsMono Nerd Font Mono-11"))
 
 ;; Corfu
 (global-corfu-mode)
@@ -34,10 +36,23 @@
 (setq make-backup-files nil)
 
 ;; Shelly
-(global-set-key (kbd "C-c e") #'eshell)
+(global-set-key (kbd "C-c t e") #'eshell)
+(global-set-key (kbd "C-c t v") #'vterm)
+(global-set-key (kbd "C-c t o") #'vshell-other-window)
 
 
 ;; Programming stuff
+(require 'project)
+(defun cv-gradle-project-override (dir)
+  (let ((root (locate-dominating-file dir "build.gradle")))
+    (if root
+	(cons 'vc root)
+      nil)))
+
+(add-to-list 'project-find-functions #'cv-gradle-project-override)
+
+(require 'eglot)
+(add-to-list 'eglot-server-programs '(java-mode "jdtls" "-configuration" "~/.cache/jdtls" "-data" "~/.local/share/jdtls/workspaces"))
 (add-hook 'java-mode-hook #'eglot-ensure)
 
 ;; Org mode stuff
